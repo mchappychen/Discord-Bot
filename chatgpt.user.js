@@ -51,13 +51,10 @@ function run(){
             method:'POST',
             url:'http://localhost:8080',
             onreadystatechange:function(xhr){
-                console.log('received')
                 if (xhr.readyState != 4 && xhr.status == 200 || xhr.responseText == "" || xhr.responseText == undefined){
-                    console.log(1,xhr)
+                    //console.log(1,xhr)
                     return
                 }
-                console.log(xhr)
-                console.log(xhr.response,xhr.responseText,xhr.responseText == undefined)
                 // console.log(JSON.parse(xhr.responseText.replace(/'/g,'"'))['msg'])
                 $('textarea')[0].value = xhr.response
                 try{
@@ -81,7 +78,6 @@ function run(){
         method:'POST',
         url:'http://localhost:8080',
         onreadystatechange:function(xhr){
-            console.log('received')
             if (xhr.readyState != 4 && xhr.status == 200 || xhr.responseText == "" || xhr.responseText == undefined){
                 return
             }
