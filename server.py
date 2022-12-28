@@ -1,6 +1,6 @@
 #This file is used to relay messages between my discord python bot, and a web-browser script
 
-# Logic:
+# How it works:
 # 1. start http_server.py
 # 2. chatgpt sends request to server every second to see if disc_message isn't empty
 # 3. discord sends request to server (from human) to set disc_message
