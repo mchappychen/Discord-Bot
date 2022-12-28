@@ -13,7 +13,7 @@ import json,time, requests, threading
 from urllib.parse import urlparse
 from socketserver import ThreadingMixIn
 
-#Colors
+#Colors for printing
 class c:
    violet = '\033[95m'
    pink = '\033[94m'
