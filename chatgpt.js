@@ -1,4 +1,5 @@
-//This script is ran in chat.openai.com to relay messages to my discord bot
+//This script is ran in chat.openai.com console to relay messages to my discord bot
+//Make sure server.py is running before you run this
 
 //Add jquery
 var script = document.createElement('script');
