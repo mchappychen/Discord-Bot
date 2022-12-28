@@ -75,7 +75,7 @@ class Serv(BaseHTTPRequestHandler):
       return
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
-   """I dont know what this does"""
+   """Threading allows the server to handle multiple requests at once"""
 
 httpd = ThreadedHTTPServer(('localhost',8080),Serv)
 print("Server is up. Don't forget to refresh chatgpt webpage")
